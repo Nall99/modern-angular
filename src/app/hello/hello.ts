@@ -1,4 +1,4 @@
-import { Component, computed, signal } from '@angular/core';
+import { Component, computed, signal, effect } from '@angular/core';
 
 @Component({
   selector: 'app-hello',
@@ -19,9 +19,12 @@ export class Hello {
 
 
   protected doubleCount = computed(() => {
-    console.log('doubleCount computed');
     return this.count() * 2;
   });
+
+  private readonly countLog = effect(() => {
+    console.log('Count value changed:', this.count());
+  })
 
   // protected getDoubleCount(){
   //   console.log('getDoubleCount called');
