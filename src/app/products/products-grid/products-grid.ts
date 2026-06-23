@@ -39,4 +39,12 @@ export class ProductsGrid {
     }
   ])
 
+  protected clearSearch(){
+    this.searchTerm.set('')
+  }
+
+  protected trimSearch(){
+    this.searchTerm.update((value) => value.trim())
+  }
+
 }
