@@ -30,6 +30,7 @@ export class ProductsGrid {
       name: "4K Ultra HD Smart TV",
       description: "Transform your living room into a home theater with our 4K Ultra HD Smart TV.",
       price: 799.99,
+      originalPrice: 999.99
     }
   ])
 
