@@ -49,12 +49,15 @@ export class ProductsGrid {
     )
   })
 
-  protected clearSearch(){
-    this.searchTerm.set('')
+  protected onAddToCart(product: Product) {
   }
 
-  protected trimSearch(){
-    this.searchTerm.update((value) => value.trim())
-  }
+  // protected clearSearch(){
+  //   this.searchTerm.set('')
+  // }
+
+  // protected trimSearch(){
+  //   this.searchTerm.update((value) => value.trim())
+  // }
 
 }
